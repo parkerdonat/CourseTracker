@@ -46,7 +46,7 @@ class LessonsTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        if LessonController.sharedController.lessons.count / 5 == 0 {
+        if LessonController.sharedController.lessons.count / 5 == section {
             return LessonController.sharedController.lessons.count % 5
         } else {
             return 5
