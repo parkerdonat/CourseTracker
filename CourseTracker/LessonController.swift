@@ -37,6 +37,7 @@ class LessonController {
         }
     }
     
+    // This init method pulls in json data and converts to model object data
     init() {
         
         let jsonFilePath = NSBundle.mainBundle().pathForResource("lesson-data", ofType: "json")
